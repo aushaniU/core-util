@@ -45,7 +45,9 @@
         <module>components/sp-config-util</module>
         <module>components/security/auth-filter</module>
         <module>components/security/user-profile</module>
+        <module>components/mask-service</module>
         <module>features</module>
+
     </modules>
 
     <dependencyManagement>
@@ -126,6 +128,13 @@
                 <version>${com.wso2telco.core.version}</version>
                 <scope>provided</scope>
             </dependency>
+            <!-- https://mvnrepository.com/artifact/commons-codec/commons-codec -->
+            <dependency>
+                <groupId>commons-codec</groupId>
+                <artifactId>commons-codec</artifactId>
+                <version>1.2</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 
