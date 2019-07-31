@@ -1,6 +1,7 @@
 package com.wso2telco.core.maskservice;
 
 import com.wso2telco.core.maskservice.PerpoertyMasker.BCMasker;
+import com.wso2telco.core.maskservice.PerpoertyMasker.CustomMasker;
 import com.wso2telco.core.maskservice.PerpoertyMasker.DefaultMasker;
 import com.wso2telco.core.maskservice.PerpoertyMasker.FPEMasker;
 
@@ -17,6 +18,8 @@ public class MaskingFactory {
             case "FPEMasker":
                 maskable = new FPEMasker();
                 break;
+            case "Custom":
+                maskable = new CustomMasker();
             default:
                 maskable = new DefaultMasker();
                 break;
