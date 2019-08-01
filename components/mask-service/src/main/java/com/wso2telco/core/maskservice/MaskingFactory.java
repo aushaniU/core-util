@@ -19,7 +19,7 @@ public class MaskingFactory {
                 maskable = new FPEMasker();
                 break;
             case "Custom":
-                maskable = new CustomMasker();
+                maskable = null; //new CustomMasker();
             default:
                 maskable = new DefaultMasker();
                 break;
